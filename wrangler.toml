@@ -1,0 +1,29 @@
+name = 'cloudflare-tvdb-proxy'
+compatibility_date = "2023-12-01"
+# pages_build_output_dir = "pages" 
+main = "src/index.js"
+
+[dev]
+ip = "0.0.0.0"
+port = 8787
+local_protocol = "http"
+
+[env.vars]
+ENV_API_KEY = ""
+
+[env.dev.vars]
+MODE = "debug"
+
+[env.production]
+name = "cloudflare-tvdb-proxy"
+
+[env.production.vars]
+ENV_API_KEY = ""
+
+[env.staging]
+name = "cloudflare-tvdb-proxy-staging"
+# route = { pattern = "tvdb-staging.libcuda.so", custom_domain = true }
+
+[env.staging.vars]
+MODE = "staging"
+TARGET_UPSTREAM = ""
