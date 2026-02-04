@@ -26,3 +26,8 @@ name = "cloudflare-tvdb-proxy-staging"
 [env.staging.vars]
 MODE = "staging"
 TARGET_UPSTREAM = ""
+
+[observability]
+[observability.logs]
+enabled = false
+invocation_logs = true
