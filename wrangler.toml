@@ -22,7 +22,6 @@ MODE = "production"
 
 [env.staging]
 name = "cloudflare-tvdb-proxy-staging"
-# route = { pattern = "tvdb-staging.libcuda.so", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
