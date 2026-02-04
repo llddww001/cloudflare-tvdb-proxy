@@ -3,8 +3,8 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
 
-async function handleRequest(request) {
-  const API_KEY = ENV_API_KEY // 可以在Worker环境变量中配置更安全
+async function handleRequest(request, env) {
+  const API_KEY = env.ENV_API_KEY // 可以在Worker环境变量中配置更安全
   const TVDB_BASE_URL = 'https://api.thetvdb.com'
   
   // 提取原始请求路径
