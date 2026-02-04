@@ -18,6 +18,7 @@ MODE = "debug"
 name = "cloudflare-tvdb-proxy"
 
 [env.production.vars]
+MODE = "production"
 ENV_API_KEY = ""
 
 [env.staging]
