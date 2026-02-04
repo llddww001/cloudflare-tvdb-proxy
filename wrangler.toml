@@ -9,7 +9,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-ENV_API_KEY = ""
+MODE = "debug"
 
 [env.dev.vars]
 MODE = "debug"
@@ -19,7 +19,6 @@ name = "cloudflare-tvdb-proxy"
 
 [env.production.vars]
 MODE = "production"
-ENV_API_KEY = ""
 
 [env.staging]
 name = "cloudflare-tvdb-proxy-staging"
